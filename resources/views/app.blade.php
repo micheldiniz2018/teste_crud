@@ -17,14 +17,22 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/media/favicons/apple-touch-icon-180x180.png') }}">
 
     @vite('resources/js/main.js')
+    <style>
+        #mute {
+            position: absolute;
+        }
+        #mute.on {
+            opacity: 0.7;
+            z-index: 1000;
+            background: white;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <noscript>
-        <strong>We're sorry but OneUI Vue Edition doesn't work properly without JavaScript enabled. Please enable it
-        to continue.</strong>
-    </noscript>
-
+    <div id="mute"></div>
     <div id="app"></div>
 </body>
 

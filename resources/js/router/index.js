@@ -248,6 +248,8 @@ const Error403 = () => import("@/views/errors/403View.vue");
 const Error404 = () => import("@/views/errors/404View.vue");
 const Error500 = () => import("@/views/errors/500View.vue");
 const Error503 = () => import("@/views/errors/503View.vue");
+//
+const CentroCusto = () => import("@/views/backend/tables/CentroCusto.vue");
 
 // Set all routes
 const routes = [
@@ -260,12 +262,18 @@ const routes = [
   */
   {
     path: "/",
-    component: LayoutLanding,
+    redirect: "/backend/dashboard",
+    component: LayoutBackend,
     children: [
       {
         path: "",
         name: "landing",
-        component: Landing,
+        component: BackendTablesResponsive,
+      },
+      {
+        path: "",
+        name: "centro_custo",
+        component: CentroCusto,
       },
     ],
   },

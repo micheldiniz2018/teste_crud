@@ -16,17 +16,17 @@ const Dashboard = () => import("@/views/starter/DashboardView.vue");
 const routes = [
   {
     path: "/",
-    component: LayoutSimple,
+    component: LayoutBackend,
     children: [
       {
         path: "",
         name: "landing",
-        component: Landing,
+        component: Dashboard,
       },
     ],
   },
   {
-    path: "/backend",
+    path: "/",
     redirect: "/backend/dashboard",
     component: LayoutBackend,
     children: [

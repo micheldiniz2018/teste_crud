@@ -30,8 +30,8 @@ store.mainContent({ mode: "boxed" });
           :to="{ name: 'landing' }"
           class="fw-bold fs-lg tracking-wider text-dual me-2"
         >
-          OneUI
-          <span class="fw-normal">Vue</span>
+          Teste
+          <span class="fw-normal">IPDV</span>
         </RouterLink>
         <!-- END Logo -->
 

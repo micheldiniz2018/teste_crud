@@ -91,7 +91,7 @@ onMounted(() => {
 
     winResize = setTimeout(() => {
       store.setSideTransitions({ transitions: true });
-    }, 500);
+    }, 60);
   });
 });
 </script>
