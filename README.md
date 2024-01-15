@@ -27,3 +27,4 @@
 #nota
 #deve ser configurado a conexão do banco de dados no arquivo .env da aplicação e logo em seguida roda o comando 'php artisan optimize:clear'
 #deve ser inserido pela interface um cargo, centro de custo, departamento e então o usuário.
+#para rodar a aplicação na raiz do projeto rode os comandos 'php artisan serve' e em seguida 'npm run dev' (para rodar o build 'npm run build') estará diponível em localhost:8000
