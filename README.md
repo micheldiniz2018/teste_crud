@@ -1,4 +1,4 @@
-# aplicação para teste
+# aplicação em php 8 com laravel 10 e vue.js 3 para CRUD de funcionários
 
 #aplicação feita com php no back-end e vuejs no front-end
 
